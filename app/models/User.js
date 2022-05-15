@@ -10,7 +10,7 @@ export default function UserModel(mongoose) {
             email: {type: String, trim: true, unique: 1},
             name: String,
             phone: {type: String, maxlength: 15},
-            image: String,
+            image: String, 
             birth: String,
             address: String,
             token: String
@@ -84,5 +84,6 @@ export default function UserModel(mongoose) {
                 })
             })
         }
+    
         return mongoose.model('User', userSchema)
     }
